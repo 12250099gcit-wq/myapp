@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <title>Course</title>
+</head>
+<body>
+    <div class="header">
+        <ul id = "menu">
+            <li><a href="student.html">Student</a></li>
+            <li style = "background-color: rgb(14, 14, 14)"><a href="course.html">Course</a></li>
+            <li><a href="enroll.html">Enrollment</a></li>
+            <li id = "Logout"><a href="">Logout</a></li>
+        </ul>
+    </div>
+    <div class="container1">
+        <h3>Course Detail</h3>
+        <div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="cID">Course ID : </label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="cid" name="courseID" placeholder="CSC103" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="cname">Course Name : </label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="cname" name="coursename" >
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <button id ="button-add" onclick="addCourse()">Add</button>
+            </div>
+        </div>
+      </div>
+      <hr width="65%">
+      <div class="container2">
+          <h3>Courses Available</h3>
+          <table id="myTable">
+              <tr>
+                  <th>Course ID</th>
+                  <th>Course Name</th>
+                  <th></th>
+                  <th></th>
+              </tr>
+          </table>
+      </div>
+    <script src="js/course.js"></script>
+
+</body>
+</html>

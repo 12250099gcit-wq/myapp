@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <title>Student</title>
+</head>
+<body>
+    <div class="header">
+        <ul id = "menu">
+            <li style = "background-color: rgb(14, 14, 14)" ><a href="student.html">Student</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li><a href="enroll.html">Enrollment</a></li>
+            <li id = "Logout"><a href="">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="container1">
+        <h3>Student Details</h3>
+        <div><!-- I have changed the form to div to prevent form submission-->
+            <div class="row">
+                <div class="col-1">
+                    <label for="stdID">Student ID :</label>
+                </div>
+                <div class="col-2">
+                    <input type="number" id="sid" name="stdID" placeholder="Ex. 20120001" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="fname">First Name : </label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="fname" name="firstname" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="lname">Last Name : </label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="lname" name="lastname">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="email">Email : </label>
+                </div>
+                <div class="col-2">
+                    <input type="email" id="email" name="stdemail">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <button id="button-add" onclick="addStudent()">Add</button>
+            </div>
+        </div>
+      </div>
+      <hr width="65%">
+      <div class="container2">
+          <h3>Student Registered</h3>
+          <table id="myTable">
+              <tr>
+                  <th>Student ID</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th></th>
+                  <th></th>
+              </tr>
+          </table>
+      </div>
+    <script src="js/student.js"></script>
+</body>
+</html>

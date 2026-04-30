@@ -1,0 +1,113 @@
+body {
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: auto;
+    width: 60%;
+    overflow: hidden;
+    background-color: rgb(10, 10, 69);
+}
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: rgb(248, 248, 248);
+    text-align: center;
+    padding: 12px ;
+    text-decoration: none;
+}
+
+#menu > li:last-child
+{
+    float:right;
+}
+
+li:hover {
+    background-color: rgb(14, 14, 14);
+}
+
+.container1{
+    width: 35%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: rgb(169, 169, 178);
+    border-radius: 20px;
+}
+
+.container2{
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+input {
+    width: 85%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 20%;
+    background-color: rgb(10, 10, 69);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 22%;
+}
+.col-1{
+    float: left;
+    width: 22%;
+    margin-top: 5px;
+}
+.col-2{
+    float: left;
+    width: 70%;
+    margin-top: 5px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#button-1{
+    background-color: rgb(225, 60, 60);
+    padding-right: 10px;
+}
+#button-2{
+    background-color: rgb(238, 241, 44);
+    padding-right: 10px;
+}
+table{
+    /* border-collapse: collapse;   */
+    width: auto;
+}
+th {
+    border: 2px solid #dddddd06;
+}
+td {
+    border: 2px solid #dddddd;
+    padding-right: 10px;   
+}
+
+/* Responsive layout - when screen size is 720 at max*/
+@media screen and (max-width: 720px) {
+    .container1 {
+        width: 90%;
+        margin-top: 0;
+    }
+    .container2 {
+        width: 80%;
+        margin-top: 0;
+    }
+    .col-1, .col-2{
+        width: 100%;
+    }
+}

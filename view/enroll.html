@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <title>Enroll</title>
+</head>
+<body>
+    <div class="header">
+        <ul id = "menu">
+            <li><a href="student.html">Student</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li style = "background-color: rgb(14, 14, 14)"><a href="enroll.html">Enrollment</a></li>
+            <li id = "Logout"><a href="">Logout</a></li>
+        </ul>
+    </div>
+    <div class="container1">
+        <h3>Enroll Student to Course</h3>
+        <div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="stdEnroll">Student ID:</label>
+                </div>
+                <div class="col-2">
+                    <select name="stdid" id="sid">
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="cID">Course ID: </label>
+                </div>
+                <div class="col-2">
+                    <select name="courseID" id="cid">
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <button id = "enroll" onclick="addEnroll()">Enroll</button> 
+            </div>
+        </div>
+      </div>
+      <hr width="65%">
+      <div class="container2">
+          <h3>Enrollment Detail</h3>
+          <table id = "myTable">
+              <tr>
+                <th>Student ID</th>
+                <th>Course ID</th>
+                <th>Date Enrolled</th> 
+                <th></th>
+              </tr>
+          </table>
+      </div>
+    <script src="js/enroll.js"></script>
+</body>
+</html>
